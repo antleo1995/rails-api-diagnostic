@@ -5,74 +5,90 @@ Place your responses inside the fenced code-blocks where indicated by comments.
 What is the purpose of a backend?
 
 ```md
-// your response here
+A backend processes and stores data - allows for persistance and shared workload
 ```
 
 Which layer in the MVC pattern is used by the controller to fetch data?
 
 ```md
-// your response here
+Controller layer
 ```
 
 Which layer in the MVC pattern communicates with the model?
 
 ```md
-// your response here
+Model layer
 ```
 
 Why don't we use views in our interpretation of the MVC pattern?
 
 ```md
-// your response here
+Good question, not sure I know why
 ```
 
 What does C.R.U.D stand for?
 
 ```md
-// your response here
+CREATE
+READ
+UPDATE
+DESTROY
 ```
 
 In which part of the MVC pattern can we find C.R.U.D actions?
 
 ```md
-// your response here
+Controller
 ```
 
 List at least 5 standard rails actions that C.R.U.D requests correspond to?
 
 ```md
-// your response here
+Index
+Show
+Create
+Update
+Patch
 ```
 
 A user action fires a `GET` request for `/people/1`. Explain in detail each step
 required for data to be returned to the client. (bullet points or ordered list)
 
 ```md
-// your response here
+1) Client requests data
+2) Server communicates with the controller
+3) Controller communicates with model
+4) Data is sent to the server
+5) Server gives data to client
+6) Client displays the data
 ```
 
 What is the command to generate a new rails-api app?
 
 ```bash
-// your response here
+rails new someapp
 ```
 
 What is the command to start an instance of a rails server?
 
 ```bash
-// your response here
+bin/rails server
 ```
 
 What are the commands to drop, create, migrate and seed a database from the command
 line? (5 bullet points)
 
 ```bash
-// your response here
+* rails db:drop
+* rails db:create
+* rails db:migrate
+* rails db:seed
+* not sure why we need 5 bullet points for 4 commands but ok....
 ```
 
 What is the command to scaffold a pet with a name and age attributes (hint:
 Also think of the data types for each attribute)?
 
 ```bash
-// your response here
+rails generate scaffold Pet name:string age:int
 ```
